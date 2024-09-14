@@ -1,0 +1,89 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-bar {
+    background-color: #0e6251;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.centar-texto {
+    display: inline-block;
+    font-size: 20px; /* Tamaño del texto */
+    font-weight: bold;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px; /* Tamaño del logo */
+    height: auto;
+    margin-right: 10px;
+    /*flex: 1;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo span {
+    display: inline-block;
+    font-size: 20px; /* Tamaño del texto */
+    font-weight: bold;
+}
+
+.vertical-menu {
+    width: 200px;
+    background-color: #148f77;
+    padding-top: 60px; /* Para evitar que se superponga con la barra superior */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.vertical-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.vertical-menu li {
+    margin: 0;
+}
+
+.vertical-menu a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.vertical-menu a:hover {
+    background-color: #1abc9c;
+}
+
+main {
+    margin-left: 200px; /* Espacio para el menú vertical */
+    padding: 20px;
+    margin-top: 60px; /* Espacio para la barra superior */
+}
+

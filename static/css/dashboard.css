@@ -1,0 +1,178 @@
+.sidebar {
+    width: 250px;
+    background-color: #080808;
+    color: #ecf0f1;
+    padding: 20px;
+}
+
+/* Contenedor principal */
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 20px;
+    /*overflow-y: auto;*/
+}
+
+/* Barra superior */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: #117a65 ;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.title-bar h1 {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* Cards KPI */
+.cards-overview {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 tarjetas por fila */
+    gap: 20px; /* Espacio entre las tarjetas */
+    margin-bottom: 20px;
+}
+
+.card {
+    /*flex: 1 1 calc(33.333% - 20px); /* Calcula el ancho para que quepan 3 tarjetas por fila, considerando el espacio entre ellas */
+    background-color: #16a085 ;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(118, 215, 196, 1.0);
+    text-align: center;
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #fdfefe;
+    font-weight: bold;
+}
+
+.card h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #fdfefe;
+    font-weight: bold;
+}
+
+.card p {
+    font-size: 14px;
+    color: #fdfefe;
+    white-space: nowrap;
+}
+
+/* Paginación */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #117a65;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.pagination button:hover {
+    background-color: #45b39d;
+}
+
+.pagination span {
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+/* Área de gráficos */
+
+/* Estilo básico para el contenedor */
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Estilo para cada sección */
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid #d1f2eb;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #e8f8f5;
+    margin-bottom: 10px;
+}
+
+/* Contenedor para gráficos en una fila */
+.chart-container {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), 
+                -5px -5px 15px rgba(255, 255, 255, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+/* Estilo para los gráficos */
+.chart {
+    flex: 1;
+    height: 400px; /* Altura fija para los gráficos */
+    box-shadow: 0 8px 12px #76d7c4;
+    transition: transform 0.3s ease;
+}
+
+.chart-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4), 
+                -10px -10px 20px rgba(255, 255, 255, 0.6);
+}
+
+.chart:hover{
+    transform: scale(1.05);
+}
+
+/* Responsive - Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .cards-overview {
+        grid-template-columns: 1fr;
+    }
+
+    .chart-container {
+        flex-direction: column;
+    }
+
+    .charts {
+        grid-template-columns: 1fr;
+    }
+
+    .chart {
+        height: 300px; /* Ajuste de altura para pantallas más pequeñas */
+    }
+
+    .sidebar {
+        width: 200px;
+    }
+}
+
+

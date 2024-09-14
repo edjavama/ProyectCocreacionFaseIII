@@ -1,0 +1,59 @@
+footer {
+    background-color: #0e6251;
+    color: #fff;
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 100%px;
+    margin: 10px;
+}
+
+.footer-column h3 {
+    margin-top: 0;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin: 5px 0;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-column form input[type="email"] {
+    padding: 8px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 4px;
+}
+
+.footer-column form button {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: #148f77;
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer-column form button:hover {
+    background-color: #0b5345;
+}
